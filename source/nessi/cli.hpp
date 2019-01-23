@@ -1,6 +1,7 @@
 #ifndef CLI_HPP
 #define CLI_HPP
 
+#include <string>
 
 namespace nessi
   {
@@ -9,8 +10,19 @@ namespace nessi
     {
     public:
 
+    void ParseArguments(int argc,char** argv);    
+        
+    void PrintHelp(void);
+    
+    std::string& getFilePath()
+      {
+      return nesFilePath;    
+      }
+    
     private:
-
+    
+    std::string nesFilePath;    
+        
     };
 
 

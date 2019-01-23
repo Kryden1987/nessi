@@ -7,3 +7,6 @@ NES Simulator
 
 
 [Marat Fayzullin](http://fms.komkon.org/)
+
+
+[NES file format](http://fms.komkon.org/CPUs/NES.html)

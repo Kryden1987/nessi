@@ -14,8 +14,12 @@ endif()
 
 set(CMAKE_VERBOSE_MAKEFILE ON) 
 
+include_directories(source/dotnes)
+
 project(nessi VERSION ${NESSI_VERSION_MAJOR}.${NESSI_VERSION_MINOR}.${NESSI_VERSION_PATCH})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
-add_executable(nessi source/nessi/main.cpp)
+add_executable(nessi source/nessi/main.cpp source/nessi/cli.cpp source/dotnes/dotnes.cpp)
+
+target_link_libraries(nessi  stdc++fs) 
