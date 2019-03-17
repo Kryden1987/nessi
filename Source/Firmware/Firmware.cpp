@@ -1,13 +1,12 @@
-#include "dotnes.hpp"
+#include "Firmware.hpp"
 #include <fstream>
 #include <iostream>
 
-namespace nessi
+namespace Nessi :: Firmware
 {
     
     
-    
-DotNes::DotNes(std::string nesFilePath)
+Firmare::Firmare(std::string nesFilePath)
   {
   std::ifstream nesFile;
   
@@ -26,4 +25,4 @@ DotNes::DotNes(std::string nesFilePath)
     
     
     
-} // end namespace nessi
+} // end namespace Nessi :: Firmware
